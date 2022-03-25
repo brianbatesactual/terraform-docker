@@ -10,7 +10,7 @@ terraform {
 provider "docker" {}
 
 resource "docker_image" "logstash" {
-  name         = "grafana/logstash-output-loki:latest"
+  name         = "grafana/logstash-output-loki"
   keep_locally = false
 }
 
